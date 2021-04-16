@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>to do list</title>
+
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="toDoList.js"></script>
+	<script type="text/javascript" src="bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+   <div class="jumbotron">
+    <div class="page-header">
+  <h1 >TO-DO LIST <small>the ultimate non bucketlist</small></h1>
+</div>
+
+	<div class="row" >
+	 <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="New task..." id="tname">
+      <span class="input-group-btn" id="pclass">
+        <button onclick='pasteName()' class="btn btn-info"> add task</button>
+
+
+      </span>
+    </div><!-- /input-group -->
+   </div><!-- /.col-lg-6 -->
+  </div>
+  <ol id="myList" class="list-group">
+  </ol>
+  <div class="row">
+  <div class="col-lg-6">
+    <div class="input-group ipt">
+      <span class="input-group-btn">
+        <button onclick="deleteItem()" class="btn btn-danger input-group-addon bot">delete </button>
+      </span>
+      
+      <input type="text" class="form-control " id="number" type="number" onkeypress="return isNumberKey(event)" >
+    </div><!-- /input-group -->
+  </div></div>
+</body>
+</html>
